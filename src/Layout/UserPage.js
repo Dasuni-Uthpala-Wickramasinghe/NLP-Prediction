@@ -16,7 +16,7 @@ export default function UserPage({username}) {
   const handleFormSubmit = () => {
     setLoading(true);
     const complaintId = push(child(ref(database), "complaints")).key;
-    fetch("https://nlp-flask-app-2738e5455766.herokuapp.com//api/predict", {
+    fetch("https://nlp-flask-app-2738e5455766.herokuapp.com/api/predict", {
       method: "POST",
       body: JSON.stringify({
         Message: addData,
