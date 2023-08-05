@@ -11,7 +11,7 @@ import { database } from "../Firebase/Firebase";
 export default function ShowComplaints() {
   const [complaints, setComplaints] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
-  const [category, setCategory] = useState("Bank account or service");
+  const [category, setCategory] = useState("all");
 
   useEffect(() => {
     const complaintsRef = ref(database, "complaints");
@@ -32,10 +32,16 @@ export default function ShowComplaints() {
   }, []);
 
   useEffect(() => {
-    const filteredData = complaints.filter(
-      (item) => item.complaint_category === category
-    );
-    setFilteredData(filteredData);
+    if(category==="all"){
+      setFilteredData(complaints);
+    }else{
+      const filteredData = complaints.filter(
+        (item) => item.complaint_category === category
+      );
+      setFilteredData(filteredData);
+      
+    }
+    
   }, [category, complaints]);
 
   return (
@@ -47,6 +53,12 @@ export default function ShowComplaints() {
           flexDirection: "row",
         }}
       >
+        <button
+          style={{ margin: 10, backgroundColor: "#D7DBDD", color: "#000" }}
+          onClick={() => setCategory("all")}
+        >
+          Show All{" "}
+        </button>
         <button
           style={{ margin: 10, backgroundColor: "#D7DBDD", color: "#000" }}
           onClick={() => setCategory("Bank account or service")}
