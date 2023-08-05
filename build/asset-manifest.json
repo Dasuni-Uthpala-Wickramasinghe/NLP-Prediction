@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NLP-Prediction/static/css/main.84925423.css",
-    "main.js": "/NLP-Prediction/static/js/main.735543fe.js",
+    "main.js": "/NLP-Prediction/static/js/main.e3037dba.js",
     "static/media/wall9.png": "/NLP-Prediction/static/media/wall9.2e25f708825d6b74b831.png",
     "static/media/homescreen.jpg": "/NLP-Prediction/static/media/homescreen.6408cc63b01af55ae07a.jpg",
     "index.html": "/NLP-Prediction/index.html",
     "main.84925423.css.map": "/NLP-Prediction/static/css/main.84925423.css.map",
-    "main.735543fe.js.map": "/NLP-Prediction/static/js/main.735543fe.js.map"
+    "main.e3037dba.js.map": "/NLP-Prediction/static/js/main.e3037dba.js.map"
   },
   "entrypoints": [
     "static/css/main.84925423.css",
-    "static/js/main.735543fe.js"
+    "static/js/main.e3037dba.js"
   ]
 }
