@@ -1,12 +1,12 @@
 import Home from './Layout/Home';
 import LoginPage from './Layout/LoginPage';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import AdminPage from './Layout/AdminPage';
 import ShowComplaints from './Layout/ShowComplaints';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
       <Route path="/" >
         <Route index element={<LoginPage />} />
@@ -15,7 +15,7 @@ function App() {
         <Route path="/show_data" element={<ShowComplaints />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   );
 }
 
