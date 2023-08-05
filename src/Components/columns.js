@@ -4,16 +4,12 @@ export const COLUMNS = [
         accessor:'id'
     },
     {
-Header:'Category',
-accessor:'category'
+        Header:'Category',
+        accessor:'complaint_category'
     },
     {
         Header:'User',
         accessor:'user'
-    },
-    {
-        Header:'Category',
-        accessor:'complaint_category'
     },
     {
         Header:'Complaint Descriptions',
